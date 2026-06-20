@@ -1,0 +1,38 @@
+// ============================================================
+// boards/shields/totem_dongle/totem_dongle.overlay
+//
+// ドングル構成を有効にする場合:
+//   1. このファイルのコメントを外す
+//   2. build.yaml の dongle ターゲットを有効化
+//   3. west.yml の badjeff モジュールを有効化
+//   4. config/totem_dongle.conf を有効化
+//   5. left/right を Peripheral に変更
+//
+// OLED (SSD1306, 128x32, I2C) ピンマッピング:
+//   XIAO SDA → D4 / P0.26
+//   XIAO SCL → D5 / P0.27
+// ============================================================
+
+// &i2c1 {
+//     status = "okay";
+//
+//     ssd1306: ssd1306@3c {
+//         compatible = "solomon,ssd1306fb";
+//         reg = <0x3c>;
+//         width = <128>;
+//         height = <32>;
+//         segment-offset = <0>;
+//         page-offset = <0>;
+//         display-offset = <0>;
+//         multiplex-ratio = <31>;
+//         segment-remap;
+//         com-invdir;
+//         prechargep = <0x22>;
+//     };
+// };
+//
+// / {
+//     chosen {
+//         zephyr,display = &ssd1306;
+//     };
+// };

@@ -1,0 +1,16 @@
+# boards/shields/totem_dongle/Kconfig.defconfig
+#
+# ドングル構成を有効にする場合はコメントを外す
+
+# if SHIELD_TOTEM_DONGLE
+#
+# config ZMK_KEYBOARD_NAME
+#     default "TOTEM"
+#
+# config BT_MAX_CONN
+#     default 5
+#
+# config BT_MAX_PAIRED
+#     default 5
+#
+# endif # SHIELD_TOTEM_DONGLE
