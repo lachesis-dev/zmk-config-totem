@@ -9,12 +9,10 @@
 //                                                                      ▀  ▀  ▀
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-       
 
 #include <behaviors.dtsi>
-
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -70,10 +68,10 @@
         symbols {
             label = "SYM";
             bindings = <
-       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR  &kp PERCENT       &kp AMPERSAND    &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-       &none            &none              &kp C_VOLUME_UP  &kp C_PP    &kp LBKT          &kp RBKT         &kp GRAVE      &kp SEMICOLON         &kp COLON              &kp CARET
-&none  &none            &none              &kp C_VOL_DN     &kp K_MUTE  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &kp UNDERSCORE  &kp AT_SIGN
-                                           &trans           &trans      &trans            &mo 3            &kp KP_N0      &trans
+              &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR  &kp PERCENT       &kp AMPERSAND    &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+              &none            &none              &kp C_VOLUME_UP  &kp C_PP    &kp LBKT          &kp RBKT         &kp GRAVE      &kp SEMICOLON         &kp COLON              &kp CARET
+&out OUT_TOG  &none            &none              &kp C_VOL_DN     &kp K_MUTE  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &kp UNDERSCORE  &kp AT_SIGN
+                                                  &trans           &trans      &trans            &mo 3            &kp KP_N0      &trans
             >;
         };
 
