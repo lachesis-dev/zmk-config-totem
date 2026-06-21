@@ -8,9 +8,3 @@ boards:
     shield: totem_left
   - board: xiao_ble
     shield: totem_right
-
-# split BLE の役割を明示（ZMK Studio では使わないが CI が安定する）
-#build:
-#  kconfig:
-#    CONFIG_ZMK_SPLIT: y
-#    CONFIG_ZMK_SPLIT_BLE: y
